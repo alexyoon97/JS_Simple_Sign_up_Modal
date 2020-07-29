@@ -9,6 +9,8 @@ window.onload = function () {
     if (modal.className == "closed") modal.className = "";
     else modal.className = "closed";
   }
+
+
   submit_btn.onclick = function () {
     for (i = 0; i < user_input.length; i++) {
       if (user_input[i].value <= 0) {
@@ -21,9 +23,9 @@ window.onload = function () {
         user_input[i].value = '';
       }
       modal_toggle_func();
-
   };
 
   sign_up_btn.onclick = modal_toggle_func;
   cancel_btn.onclick = modal_toggle_func;
+  
 };
