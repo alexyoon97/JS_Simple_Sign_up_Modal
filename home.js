@@ -17,6 +17,11 @@ window.onload = function () {
       }
     }
     alert("You have signed up successfully");
+    for (i = 0; i < user_input.length; i++) {
+        user_input[i].value = '';
+      }
+      modal_toggle_func();
+
   };
 
   sign_up_btn.onclick = modal_toggle_func;
